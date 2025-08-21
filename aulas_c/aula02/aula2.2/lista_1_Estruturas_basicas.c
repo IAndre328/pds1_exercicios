@@ -64,5 +64,28 @@ int main(){
     printf("O resultado da conta (cos(0.8) + sin(0.8)) * (cos(0.8) - sin(0.8)) é: %f\n", (cos(0.8) + sin(0.8)) * (cos(0.8) - sin(0.8)));
     
     // Fim do exercício 1
+
+    // Início do exercício 2
+    float floA, floB, floC, floC, floD;
+    printf("Digite os números a, b, c, e d");
+    scanf("%d %d %d %d", &floA, &floB, &floC, &floD);
+
+
+    // Letra a
+    printf("O resultado da soma a + b é: %f\n", floA + floB);
+    
+    // Letra b
+    printf("O resultado da divisão a / c é: %f\n", floA / floC);
+
+    // Letra c
+    printf("O resultado da conta a elevado a 2 é: ");
+
+    printf("O resultado da cona b * c é: %f\n", floB * floC);
+
+    
+
+
+
+
     
 }
