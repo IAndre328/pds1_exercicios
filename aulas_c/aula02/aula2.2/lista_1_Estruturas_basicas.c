@@ -6,6 +6,7 @@
 
 
 int main(){
+
     
     // Início do exercício número 1
     
@@ -70,7 +71,7 @@ int main(){
 
     // Início do exercício 2
     float floA, floB, floC, floD;
-    printf("Digite os números a, b, c, e d");
+    printf("Digite os números a, b, c, e d \n");
     scanf("%f %f %f %f", &floA, &floB, &floC, &floD);
 
 
@@ -135,18 +136,41 @@ int main(){
 
     // Início do exercício 3
         float a,b,c;
-        printf("Digite os números a, b e c");
-        scanf("%f %f %f", &a);
+        printf("Digite os números a, b e c \n");
+        scanf("%f %f %f", &a, &b, &c);
+    
+    // Letra a
+        printf("A média de a, b e c é: %f\n", (a+b+c)/3);
 
+    // Letra b
+        printf("A média ponderada, onde a tem peso 3, b tem peso 4 e c tem peso 5 é: %f\n", ((a*3) + (b*4) + (c*5))/3);
 
+    // Letra c
+        printf("O perímetro de um círculo de raio a é: %.2f\n", (2 * 3.14159 * a));
 
+    // Letra d
+        printf("O raio de um círculo de raio a é: %.2f\n", (3.14159 * a * a));
 
+    // Letra e
+        printf("A área de um triângulo de base b e altura c é: %f\n", (b * c)/2);
 
+    // Letra f
+        printf("A hipotenusa de um triângulo retângulo cujos lados são b e c é: %.2f\n", sqrt((a * a) + (b * b)));
 
+    // Letra g
+        printf("%f\n", ( (b * -1) + (sqrt(b * b - (4 * a * c)) ) / 2  * a) );
+        printf("As raízes de da equação do segundo grau definida por a.x2 + bx + c são: %f %f\n", (( (b * -1) + (sqrt(b * b - (4 * a * c))))) / 2 * a , (( (b * -1) - (sqrt(b * b - (4 * a * c))))) / 2 * a);
     
 
-
-
-
     
+    // Fim do exercício 3
+    // Final do exercício.
+
+    // Considerações finais:
+    /*
+        Pessoalmente, achei este um exercício pessoalmente muito massante, mas acho normal pra quem está começando no ramo da programação. Ademais as funções de seno, cosseno e tangente retornam os ângulos em radianos, como não estava específico, tanto a entrada, quanto a saída estão em radianos
+        Em segunda instância, teria me economizado uma boa dor de cabeça sabendo que para ajudar o gcc ler as funççoes de seno e cosseno é necessário colocar o parâmetro "-lm" na hora da compilação. EX: lista_1_Estruturas_basicas.c -o lista_1_Estruturas_basicas.out -lm
+    */
+    
+
 }
