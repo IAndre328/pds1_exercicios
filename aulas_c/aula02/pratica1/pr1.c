@@ -9,7 +9,7 @@ int main(int argc, char const *argv[]){
     const char letra4 = '-';
     const char letra5 = '1';
 
-    printf("%d %d %d %d %d", letra1, letra2 letra3, letra4, letra5);
+    printf("%d %d %d %d %d", letra1, letra2, letra3, letra4, letra5);
     /* code */
     return 0;
 }
