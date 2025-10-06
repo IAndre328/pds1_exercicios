@@ -1,36 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+
+
 void removechar(char* a, int tamanho, char c){
     // escreva sua solução aqui
     int codCaractereRef = c;
     
     
-    
     int done = 0;
     int i = 0;
-    int iniDepois = 0;
-    char tempAntes[50];
-    char tempDepois[50];
+   
     
     
-    while ((i < tamanho){
+    
+    while((i < tamanho) && (done == 0)){
         int caracterAnalise = a[i];
 
         
-        if (done < 1){
-            if (caracterAnalise == codCaractereRef){
-                done++;
-                
-                iniDepois = i;
-                
-                a[i] = (char)32;
-                
-                tempAntes[i + 1] = a[tamanho];
-                
+        if(caracterAnalise == codCaractereRef){
+            
+            while(i < tamanho){
+                a[i] =  a[i + 1];
+                i++;
             }
-            tempAntes[i] = a[i];
-
-  
+            
+            done++;
+            
+        }
+        
         i++;
     }
-        
     
+    
+
 }
