@@ -1,0 +1,21 @@
+all: clean game run
+
+clean:
+	rm *.out
+
+game:
+	gcc main.c -o game.out \
+		utils.c \
+		renderer.c \
+		entities.c \
+		deck.c \
+		combat.c \
+		enemies.c \
+		-lm -g\
+		`pkg-config allegro-5 allegro_main-5 \
+		allegro_font-5 \
+		allegro_image-5 allegro_primitives-5 \
+		--libs --cflags`
+
+run:
+	./game.out
